@@ -1,0 +1,80 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+	    <RelativeLayout
+	        android:baselineAligned="true"
+	        android:id="@+id/map_search"
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent">
+		    <EditText
+		            android:id="@+id/location_text_search"
+		            android:inputType="textNoSuggestions"
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:hint="@string/search"
+		            android:gravity="left|center"
+		            android:visibility="visible" />
+		
+		    <Button
+		        android:id="@+id/location_button_cancel"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignBottom="@+id/location_text_search"
+		        android:layout_alignParentRight="true"
+		        android:layout_alignParentTop="true"
+		        android:background="@android:color/transparent"
+		        android:drawableTop="@drawable/close" />
+
+        </RelativeLayout>
+        
+        <fragment
+            android:id="@+id/map"
+            android:layout_below="@+id/map_search"
+            android:layout_above="@+id/location_button_report"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            class="com.google.android.gms.maps.MapFragment" />
+        
+        <Button
+            android:id="@+id/location_button_report"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:text="@string/action_report"
+            android:drawableLeft="@drawable/add"
+            android:gravity="center"
+            android:background="@drawable/rounded_rect"
+            android:visibility="visible" />
+        
+        <ListView
+            android:background="#FFAAAAAA"
+            android:cacheColorHint="#00000000"
+            android:id="@+id/map_search_list"
+            android:visibility="invisible"
+            android:layout_below="@+id/map_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/location_button_help"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/map"
+            android:layout_alignParentLeft="true"
+            android:background="#00000000"
+            android:contentDescription="@string/Help"
+            android:drawableTop="@drawable/help" />
+        
+</RelativeLayout>

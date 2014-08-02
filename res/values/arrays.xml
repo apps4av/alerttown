@@ -1,0 +1,14 @@
+<resources> 
+    
+    <string-array name="crime_type">
+        <item>Shooting</item>
+        <item>Robbery</item>
+        <item>Explosion</item>
+        <item>Riots</item>
+        <item>Protests</item>
+        <item>Fire</item>
+        <item>Medical Emergency</item>
+        <item>Traffic Jam</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">AlertTown</string>
+    <string name="action_report">Report A Problem</string>
+    <string name="crime_description">Describe the crime</string>
+    <string name="submit">Submit</string>
+    <string name="current_location">Current GPS Location</string>
+    <string name="search">Search</string>
+    <string name="SetAlert">Set Alert Near</string>
+    <string name="notifications_enabled">Looking out for your safety</string>
+    <string name="alerts">Alerts</string>
+    <string name="cancel">Cancel</string>
+    <string name="Help">Help</string>
+    <string name="see">See</string>
+    <string name="ago">ago</string>
+    <string name="reports">Reports</string>
+    <string name="miles_away">miles away</string>
+    <string name="ok">OK</string>
+    <string name="message">Message</string>
+    <string name="SuccessSubmit">Successfully submitted the report!</string>
+    <string name="NoInternet">Report will be sent when your device is connected to the Internet.</string>
+    <string name="NoAccount">This device needs a Gmail account to submit a report.</string>
+    <string name="NoLocation">To submit a report, please turn on the GPS in your device.</string>
+    <string name="TooManyReports">Please wait before submitting a new report.</string>
+    <string name="ReceivedReport">We have received your report of</string>
+     
+</resources>
